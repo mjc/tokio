@@ -127,7 +127,7 @@ pub(crate) struct Context {
 type Notified = task::Notified<Arc<Handle>>;
 
 /// Initial queue capacity.
-const INITIAL_CAPACITY: usize = 64;
+const INITIAL_CAPACITY: usize = 8192;
 
 /// Used if none is specified. This is a temporary constant and will be removed
 /// as we unify tuning logic between the multi-thread and current-thread
